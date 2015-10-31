@@ -222,28 +222,6 @@ public class Stig extends ApplicationAdapter {
 		
 		enemyMovement();
 		
-//		if (e.go) {
-//			e.move();
-//			++time;
-//		}
-//
-//		if (e.goal) {
-//			e.goal = false;
-//			if(!prefs.contains("localhighscore" +id ) || prefs.getInteger("localhighscore" +id) < time) {
-//				prefs.putInteger("localhighscore" +id, time);
-//				activePacket.id = id;
-//				activePacket.name = name;
-//				activePacket.score = time;
-//				
-//				if(client.isConnected()) {
-//					System.out.println("Sending score to Server.");
-//					client.sendTCP(activePacket);
-//				}
-//				else
-//					System.out.println("Failed to send score to Server, not connected.");
-//			}
-//		}
-		
 		batch.begin();
 		
 		batch.draw(textures.BACKGROUND, 0, nodeOffsetY);
